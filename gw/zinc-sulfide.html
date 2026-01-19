@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红外窗口用硫化锌 - 8-12μm高透过硫化锌窗口 | 专业红外材料供应商</title>
+    <style>
+        /* 与首页/其他子页面统一的样式，保证视觉一致性 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* 导航栏 - 和首页样式完全一致 */
+        .navbar {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        .navbar .nav-links a:hover {
+            color: #3498db;
+        }
+        /* 产品Banner */
+        .product-banner {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/zinc-sulfide-banner.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        .product-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .product-banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* 内容容器 */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 5%;
+        }
+        /* 产品概述 */
+        .product-intro {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .product-intro .intro-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .product-intro .intro-text h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-left: 4px solid #3498db;
+            padding-left: 1rem;
+        }
+        .product-intro .intro-text p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #555;
+        }
+        .product-intro .intro-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        .product-intro .intro-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        /* 规格参数 */
+        .specs {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 4rem;
+        }
+        .specs h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .specs-table th, .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        .specs-table th {
+            background-color: #f1f5f9;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .specs-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        /* 应用领域 */
+        .applications {
+            margin-bottom: 4rem;
+        }
+        .applications h2 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .app-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .app-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+        .app-card h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .app-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        /* 常见问题 */
+        .faq {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .faq h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            display: none;
+            padding-top: 0.8rem;
+            color: #666;
+        }
+        .faq-question::after {
+            content: "+";
+            color: #3498db;
+            font-size: 1.2rem;
+        }
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        /* 底部 */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+            .navbar .nav-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            .navbar .nav-links a {
+                margin-left: 0;
+            }
+            .product-banner {
+                padding: 3rem 5%;
+            }
+            .product-banner h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 - 含返回首页的链接 -->
+    <nav class="navbar">
+        <div class="logo">红外材料产品中心</div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="#intro">产品概述</a>
+            <a href="#specs">规格参数</a>
+            <a href="#apps">应用领域</a>
+            <a href="#faq">常见问题</a>
+        </div>
+    </nav>
+
+    <!-- 产品Banner -->
+    <section class="product-banner">
+        <h1>红外窗口用硫化锌</h1>
+        <p>8-12μm大气窗口高透过率，低吸收低散射，适用于红外成像/测温系统窗口</p>
+    </section>
+
+    <!-- 主要内容容器 -->
+    <div class="container">
+        <!-- 产品概述 -->
+        <section class="product-intro" id="intro">
+            <div class="intro-text">
+                <h2>产品概述</h2>
+                <p>红外窗口用硫化锌（ZnS）采用化学气相沉积（CVD）工艺制备，是8-12μm大气红外窗口的核心光学材料，在该波段透过率≥90%，吸收系数≤0.005 cm⁻¹，具有优异的光学均匀性和力学性能。</p>
+                <p>产品分为多晶硫化锌（CVD-ZnS）和单晶硫化锌，其中多晶硫化锌因成本低、加工性能好，是民用/工业红外窗口的主流选择；单晶硫化锌光学性能更优，适用于高端军工/航天场景。</p>
+                <p>硫化锌窗口片耐高低温（-50℃~+150℃）、耐潮湿、抗冲击，可定制不同尺寸、厚度，支持镀增透膜、防反射膜等功能性薄膜，满足不同红外系统的使用需求。</p>
+            </div>
+            <div class="intro-image">
+                <img src="images/zinc-sulfide.jpg" alt="红外窗口用硫化锌实物图">
+            </div>
+        </section>
+
+        <!-- 规格参数 -->
+        <section class="specs" id="specs">
+            <h2>技术规格参数</h2>
+            <table class="specs-table">
+                <thead>
+                    <tr>
+                        <th>参数项</th>
+                        <th>标准值</th>
+                        <th>可定制范围</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>纯度</td>
+                        <td>≥99.99% (4N)</td>
+                        <td>≥99.9% (3N) - ≥99.999% (5N)</td>
+                    </tr>
+                    <tr>
+                        <td>尺寸（直径）</td>
+                        <td>40mm</td>
+                        <td>8mm - 120mm</td>
+                    </tr>
+                    <tr>
+                        <td>厚度</td>
+                        <td>2mm</td>
+                        <td>0.5mm - 8mm</td>
+                    </tr>
+                    <tr>
+                        <td>红外透过率</td>
+                        <td>≥90% (8-12μm)</td>
+                        <td>≥85% - ≥95%</td>
+                    </tr>
+                    <tr>
+                        <td>表面粗糙度</td>
+                        <td>≤10nm (Ra)</td>
+                        <td>≤5nm - ≤20nm</td>
+                    </tr>
+                    <tr>
+                        <td>使用温度范围</td>
+                        <td>-50℃~+150℃</td>
+                        <td>-100℃~+200℃（特殊定制）</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 应用领域 -->
+        <section class="applications" id="apps">
+            <h2>主要应用领域</h2>
+            <div class="app-cards">
+                <div class="app-card">
+                    <h3>红外热成像仪窗口</h3>
+                    <p>民用/工业红外热成像仪前端窗口，适配8-12μm探测波段，成像清晰。</p>
+                </div>
+                <div class="app-card">
+                    <h3>红外测温仪窗口</h3>
+                    <p>非接触式红外测温仪窗口，耐环境干扰，测温精度高。</p>
+                </div>
+                <div class="app-card">
+                    <h3>安防监控红外窗口</h3>
+                    <p>夜视安防监控系统红外窗口，全天候工作，抗恶劣天气。</p>
+                </div>
+                <div class="app-card">
+                    <h3>无人机红外吊舱窗口</h3>
+                    <p>无人机红外侦察吊舱窗口，轻量化、高透过，适应飞行环境。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="faq" id="faq">
+            <h2>常见问题解答</h2>
+            <div class="faq-item">
+                <div class="faq-question">硫化锌窗口片容易划伤吗？</div>
+                <div class="faq-answer">
+                    硫化锌莫氏硬度约3.5，硬度中等，日常使用需避免与硬物直接接触；可镀硬质保护膜（如SiO₂）提升表面耐磨性，满足户外/工业场景的抗划伤需求。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">硫化锌和硒化锌该怎么选？</div>
+                <div class="faq-answer">
+                    若仅需8-12μm大气窗口应用（如常规热成像），选硫化锌（成本低、性价比高）；若需超宽波段（0.5-20μm）或高功率激光场景，选硒化锌。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">硫化锌窗口片需要镀膜吗？</div>
+                <div class="faq-answer">
+                    建议镀增透膜，未镀膜的硫化锌窗口片因折射率差异会有约15%的反射损耗，镀膜后可将反射损耗降至≤1%，大幅提升透过率。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">硫化锌窗口片的保质期是多久？</div>
+                <div class="faq-answer">
+                    密封干燥保存下，保质期可达5年；开封后若长期暴露在高湿（RH>95%）环境，表面可能轻微氧化，建议尽快使用或重新密封。
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <p>© 2026 红外材料产品中心 版权所有 | 联系电话：400-123-4567 | 邮箱：info@ir-materials.com</p>
+    </footer>
+
+    <script>
+        // FAQ折叠展开功能
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        // 平滑滚动（点击导航栏锚点）
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

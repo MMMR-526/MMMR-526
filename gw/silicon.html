@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>硅片 - 红外级硅片 - 天津西美半导体材料有限公司</title>
+    <!-- 解决https/http混合内容问题 -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 图标 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- 自定义Tailwind配置（与首页/锗片页保持一致） -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F3460', // 主色调：深蓝
+                        secondary: '#1A508B', // 次要色调
+                        accent: '#FF6B35', // 强调色
+                        neutral: '#F5F5F5', // 中性色
+                        dark: '#1E293B' // 深色
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .hover-lift {
+                transition: transform 0.3s ease;
+            }
+            .hover-lift:hover {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-white">
+    <!-- 导航栏（与首页/锗片页保持一致） -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 shadow-md transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- 企业LOGO -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i class="fa-solid fa-microchip text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-primary">西美半导体</span>
+                </a>
+
+                <!-- 桌面端导航 -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-dark hover:text-primary font-medium">首页</a>
+                    <a href="index.html#about" class="text-dark hover:text-primary font-medium">关于我们</a>
+                    <a href="index.html#products" class="text-primary font-bold">产品中心</a>
+                    <a href="index.html#news" class="text-dark hover:text-primary font-medium">新闻资讯</a>
+                    <a href="index.html#contact" class="text-dark hover:text-primary font-medium">联系我们</a>
+                </nav>
+
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden text-dark text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="index.html#home" class="text-dark hover:text-primary font-medium py-2 border-b border-gray-100">首页</a>
+                <a href="index.html#about" class="text-dark hover:text-primary font-medium py-2 border-b border-gray-100">关于我们</a>
+                <a href="index.html#products" class="text-primary font-bold py-2 border-b border-gray-100">产品中心</a>
+                <a href="index.html#news" class="text-dark hover:text-primary font-medium py-2 border-b border-gray-100">新闻资讯</a>
+                <a href="index.html#contact" class="text-dark hover:text-primary font-medium py-2">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 产品详情头部 -->
+    <section class="pt-28 pb-12 md:pt-36 md:pb-16 bg-neutral">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-start gap-8">
+                <!-- 产品主图 -->
+                <div class="md:w-1/2">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img 
+                            src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/488c260648ff465bb801b4e787f7983b.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260115133740D86E6FE761607B99CDCA&rrcfp=dafada99&x-expires=2084679460&x-signature=iWOpJUdhSPZ4fSMYYSAfkht%2F2Ck%3D" 
+                            alt="红外级硅片" 
+                            class="w-full h-auto rounded-lg"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1624953587687?w=800&q=80'"
+                        >
+                    </div>
+                    <!-- 产品缩略图 -->
+                    <div class="flex gap-4 mt-4 overflow-x-auto pb-2">
+                        <img 
+                            src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/488c260648ff465bb801b4e787f7983b.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260115133740D86E6FE761607B99CDCA&rrcfp=dafada99&x-expires=2084679460&x-signature=iWOpJUdhSPZ4fSMYYSAfkht%2F2Ck%3D" 
+                            alt="硅片正面" 
+                            class="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-80"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1624953587687?w=100&h=100&q=80'"
+                        >
+                        <img 
+                            src="https://images.unsplash.com/photo-1584306416722?w=100&h=100&q=80" 
+                            alt="硅片加工细节" 
+                            class="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-80"
+                        >
+                        <img 
+                            src="https://images.unsplash.com/photo-1590586767748?w=100&h=100&q=80" 
+                            alt="硅片应用场景" 
+                            class="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-80"
+                        >
+                    </div>
+                </div>
+
+                <!-- 产品基本信息 -->
+                <div class="md:w-1/2">
+                    <nav class="flex mb-4 text-sm" aria-label="Breadcrumb">
+                        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                            <li class="inline-flex items-center">
+                                <a href="index.html" class="text-gray-500 hover:text-primary">
+                                    <i class="fa-solid fa-home mr-1"></i>首页
+                                </a>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-chevron-right text-gray-400 text-xs mr-1"></i>
+                                    <a href="index.html#products" class="text-gray-500 hover:text-primary">产品中心</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-chevron-right text-gray-400 text-xs mr-1"></i>
+                                    <a href="#" class="text-gray-500 hover:text-primary">红外窗口</a>
+                                </div>
+                            </li>
+                            <li aria-current="page">
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-chevron-right text-gray-400 text-xs mr-1"></i>
+                                    <span class="text-primary font-medium">硅片</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <h1 class="text-3xl md:text-4xl font-bold text-primary mb-4">红外级硅片</h1>
+                    <div class="text-xl text-accent font-medium mb-6">高纯度 · 高透过率 · 定制化加工</div>
+
+                    <!-- 产品核心卖点 -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-bold mb-3 flex items-center">
+                            <i class="fa-solid fa-star text-accent mr-2"></i>产品核心优势
+                        </h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>超高纯度：电子级硅料，纯度≥99.9999% (6N)，杂质含量极低</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>优异红外透过：1.2-8μm波段透过率≥60%，无明显吸收峰</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>精密加工：平面度≤1μm，翘曲度≤5μm，满足高精度光学要求</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>环境稳定性：耐高低温、抗潮湿，长期使用性能无衰减</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 立即咨询按钮 -->
+                    <a href="index.html#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-md hover:shadow-lg">
+                        <i class="fa-solid fa-phone mr-2"></i>立即咨询
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品详细参数 -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center mb-8">产品技术参数</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse bg-white shadow-md rounded-lg">
+                    <thead>
+                        <tr class="bg-primary text-white">
+                            <th class="px-6 py-3 text-left text-sm font-medium">参数项</th>
+                            <th class="px-6 py-3 text-left text-sm font-medium">技术指标</th>
+                            <th class="px-6 py-3 text-left text-sm font-medium">测试方法</th>
+                            <th class="px-6 py-3 text-left text-sm font-medium">备注</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-sm text-gray-700 font-medium">化学纯度</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">≥99.9999% (6N)</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">GD-MS</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">可定制7N级超高纯产品</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-sm text-gray-700 font-medium">红外透过率</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">≥60% (1.2-8μm, 5mm厚)</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">傅里叶红外光谱仪</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">未镀膜</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-sm text-gray-700 font-medium">尺寸范围</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">Φ10-300mm，厚度0.3-50mm</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">激光测径仪</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">支持方形/异形定制</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-sm text-gray-700 font-medium">表面粗糙度</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">Ra ≤ 0.3nm</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">AFM原子力显微镜</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">双面光学抛光</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-sm text-gray-700 font-medium">平整度</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">≤1μm</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">激光平面干涉仪</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">光学级标准</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-sm text-gray-700 font-medium">使用温度范围</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">-60℃ ~ +200℃</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">高低温循环测试</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">可定制耐高温型</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品应用领域 -->
+    <section class="py-12 bg-neutral">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center mb-8">应用领域</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 应用场景1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-primary text-3xl mb-4 text-center">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">红外测温设备</h3>
+                    <p class="text-gray-600 text-center">
+                        应用于工业红外测温仪、医用测温枪、红外热成像仪等设备，提供精准的红外信号传输。
+                    </p>
+                </div>
+                <!-- 应用场景2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-primary text-3xl mb-4 text-center">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">红外窗口器件</h3>
+                    <p class="text-gray-600 text-center">
+                        用于安防监控、无人机、车载红外系统的窗口保护，兼顾高透过率和机械强度。
+                    </p>
+                </div>
+                <!-- 应用场景3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-primary text-3xl mb-4 text-center">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">航天军工</h3>
+                    <p class="text-gray-600 text-center">
+                        适配导弹制导、卫星遥感、雷达系统等军工航天领域，耐极端环境性能优异。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定制服务 -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-primary/5 rounded-xl p-8 md:p-12">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-2/3">
+                        <h2 class="text-2xl font-bold mb-4 text-primary">定制化生产服务</h2>
+                        <p class="text-gray-700 mb-6">
+                            依托多年半导体材料加工经验，我们可为客户提供全流程硅片定制服务，从原材料选型、晶体生长到精密加工、光学镀膜，全程严格把控质量，满足不同场景的个性化需求。
+                        </p>
+                        <ul class="space-y-2 text-gray-700 mb-6">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-accent mt-1 mr-2"></i>
+                                <span>尺寸定制：任意规格的圆形、方形、异形硅片精密加工</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-accent mt-1 mr-2"></i>
+                                <span>表面处理：单面/双面抛光、增透镀膜、防反射镀膜定制</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-accent mt-1 mr-2"></i>
+                                <span>性能定制：高阻硅、低缺陷、耐高温等特殊性能定制</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center">
+                        <a href="index.html#contact" class="inline-block bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-medium transition-all shadow-md hover:shadow-lg text-center w-full md:w-auto">
+                            <i class="fa-solid fa-file-pen mr-2"></i>定制需求提交
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相关产品推荐 -->
+    <section class="py-12 bg-neutral">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center mb-8">相关产品推荐</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 相关产品1：锗片 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-lift">
+                    <a href="germanium.html">
+                        <img 
+                            src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/2b80776645e74a56baa350ef65452edd.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=2026011514242788C67AB1550ACB76CAEC&rrcfp=dafada99&x-expires=2084682268&x-signature=0K6N2h8h3wlvRJZnEv2C8JDfpew%3D" 
+                            alt="红外光学级锗片" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584306416722?w=400&h=300&q=80'"
+                        >
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">红外光学级锗片</h3>
+                        <a href="germanium.html" class="text-primary text-sm font-medium hover:underline">查看详情 <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+                <!-- 相关产品2：蓝宝石 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-lift">
+                    <a href="sapphire.html">
+                        <img 
+                            src="https://images.unsplash.com/photo-1607619662489?w=400&h=300&q=80" 
+                            alt="蓝宝石窗口片" 
+                            class="w-full h-48 object-cover"
+                        >
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">蓝宝石窗口片</h3>
+                        <a href="sapphire.html" class="text-primary text-sm font-medium hover:underline">查看详情 <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+                <!-- 相关产品3：硫化锌 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-lift">
+                    <a href="zinc-sulfide.html">
+                        <img 
+                            src="https://images.unsplash.com/photo-1590586767748?w=400&h=300&q=80" 
+                            alt="硫化锌红外窗口" 
+                            class="w-full h-48 object-cover"
+                        >
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">硫化锌</h3>
+                        <a href="zinc-sulfide.html" class="text-primary text-sm font-medium hover:underline">查看详情 <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+                <!-- 相关产品4：硒化锌 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-lift">
+                    <a href="zinc-selenide.html">
+                        <img 
+                            src="https://images.unsplash.com/photo-1618005182384?w=400&h=300&q=80" 
+                            alt="硒化锌窗口片" 
+                            class="w-full h-48 object-cover"
+                        >
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">硒化锌</h3>
+                        <a href="zinc-selenide.html" class="text-primary text-sm font-medium hover:underline">查看详情 <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚（与首页/锗片页保持一致） -->
+    <footer class="bg-dark text-white/80 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa-solid fa-microchip text-accent text-2xl"></i>
+                        <span class="text-xl font-bold text-white">西美半导体</span>
+                    </div>
+                    <p class="mb-4">专注半导体材料研发与生产，为客户提供高品质的产品和服务</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white/80 hover:text-white">
+                            <i class="fa-brands fa-weixin"></i>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white">
+                            <i class="fa-brands fa-weibo"></i>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium text-lg mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white">首页</a></li>
+                        <li><a href="index.html#about" class="hover:text-white">关于我们</a></li>
+                        <li><a href="index.html#products" class="hover:text-white">产品中心</a></li>
+                        <li><a href="index.html#news" class="hover:text-white">新闻资讯</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium text-lg mb-4">产品系列</h4>
+                    <ul class="space-y-2">
+                        <li><a href="silicon.html" class="text-white">硅片</a></li>
+                        <li><a href="germanium.html" class="hover:text-white">锗片</a></li>
+                        <li><a href="sapphire.html" class="hover:text-white">蓝宝石</a></li>
+                        <li><a href="zinc-sulfide.html" class="hover:text-white">硫化锌</a></li>
+                        <li><a href="zinc-selenide.html" class="hover:text-white">硒化锌</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium text-lg mb-4">联系我们</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fa-solid fa-map-marker-alt text-accent mr-2"></i> 中国天津市西青区精武镇大卷子工业园27号</li>
+                        <li class="flex items-center"><i class="fa-solid fa-phone text-accent mr-2"></i> 13752690367</li>
+                        <li class="flex items-center"><i class="fa-solid fa-envelope text-accent mr-2"></i> bgs@ximeitec.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-sm">
+                <p>© 2025 天津西美半导体材料有限公司 版权所有 | 津ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript（与锗片页保持一致，新增缩略图切换功能） -->
+    <script>
+        // 移动端菜单切换
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.add('py-4');
+                navbar.classList.remove('py-2');
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    mobileMenu.classList.add('hidden');
+                    const icon = menuBtn.querySelector('i');
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+            });
+        });
+
+        // 图片加载失败自动重试 + 兜底
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                let retryCount = 0;
+                const maxRetry = 2;
+                const originalSrc = img.src;
+                
+                img.onerror = function() {
+                    if (retryCount < maxRetry) {
+                        retryCount++;
+                        img.src = originalSrc + '?t=' + Date.now();
+                    } else {
+                        if (img.hasAttribute('onerror')) {
+                            const onerrorFunc = new Function(img.getAttribute('onerror'));
+                            onerrorFunc.call(img);
+                        }
+                    }
+                };
+            });
+        });
+
+        // 产品缩略图切换主图功能
+        const thumbnails = document.querySelectorAll('.flex.gap-4 img');
+        const mainImage = document.querySelector('.bg-white.p-4 img');
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // 替换缩略图尺寸参数，显示高清主图
+                let highResSrc = this.src;
+                if (highResSrc.includes('?w=100&h=100&q=80')) {
+                    highResSrc = highResSrc.replace('?w=100&h=100&q=80', '?w=800&q=80');
+                }
+                mainImage.src = highResSrc;
+                mainImage.alt = this.alt;
+            });
+        });
+    </script>
+</body>
+</html>
